@@ -48,7 +48,7 @@ composer install
 
 Execution example
 ```
-php ./src/jp/co/yahoo/adssearchapi/adssearchapi/sample/ReportDefinitionServiceSample.php
+php ./src/jp/co/yahoo/adssearchapi/sample/ReportDefinitionServiceSample.php
 ```
 
 --------------------------------
