@@ -1,10 +1,7 @@
 --------------------------------
 [Version]
 --------------------------------
-v1
-
-■ Change logs
------------
+v2
 
 
 --------------------------------
@@ -38,7 +35,7 @@ To construct PHP environment, install followings.
 --------------------------------
 Move to the directory where you stored the cloned sample program, and execute OpenAPI Generator to generate a PHP client.
 ```
-openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v1/Route.yaml -g php -o ./
+openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v2/Route.yaml -g php -o ./
 ```
 
 Then, composer.json is generated immediately below, so execute client install.
