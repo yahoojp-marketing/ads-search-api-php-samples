@@ -5,4 +5,11 @@ PHPサンプルプログラムです。
 ご利用前に、以下のReadMeをご確認ください。
 
 ### [日本語](./README_JA.md)
-### [英語](./README_EN.md)
+
+# Yahoo! Ads Search Ads API PHP sample code
+
+PHP sample code.
+
+Could you please confirm the ReadMe.
+
+### [English](./README_EN.md)

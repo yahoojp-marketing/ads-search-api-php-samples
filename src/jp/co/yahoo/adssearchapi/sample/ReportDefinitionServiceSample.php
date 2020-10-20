@@ -115,7 +115,14 @@ class ReportDefinitionServiceSample
 
         try {
             $data = $apiInstance->reportDefinitionServiceDownloadPost($report_definition_service_download_selector);
-            file_put_contents('./download/'.'sample.csv',$data);
+
+            if ( file_exists( './download/sample.csv' )) {
+                unlink('./download/sample.csv');
+            }
+
+            foreach( $data as $line ) {
+                file_put_contents('./download/'.'sample.csv', $line, FILE_APPEND);
+            }
         } catch (Exception $e) {
             echo 'Exception when calling ReportDefinitionServiceApi->reportDefinitionServiceDownloadPost: ', $e->getMessage(), PHP_EOL;
         }
