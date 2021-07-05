@@ -25,7 +25,7 @@ PHP環境を構築するために、以下をインストールしてくださ�
 
 1. PHP 7.1以上のバージョン
 2. Composer 1.9.3以上
-3. OpenAPI generator 4.2.3以上
+3. OpenAPI generator 4.2.3以上の4.x系
 4. confディレクトリ配下にあるapi_config.iniに各IDを記述します。
   - accountId          : アカウントIDを記述してください(必須)。
   - accessToken        : アクセストークンを記述してください(必須)。
