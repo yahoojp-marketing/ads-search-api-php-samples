@@ -1,7 +1,7 @@
 --------------------------------
 【バージョン】
 --------------------------------
-v9
+v10
 
 
 --------------------------------
@@ -23,9 +23,9 @@ src/jp/co/yahoo/adssearchapi
 --------------------------------
 PHP環境を構築するために、以下をインストールしてください。
 
-1. PHP 7.1以上のバージョン
-2. Composer 1.9.3以上
-3. OpenAPI generator 4.2.3以上の4.x系
+1. PHP 8.1以上のバージョン
+2. Composer 2.4.2以上
+3. OpenAPI generator 6.2.0以上
 4. confディレクトリ配下にあるapi_config.iniに各IDを記述します。
   - accountId          : アカウントIDを記述してください(必須)。
   - accessToken        : アクセストークンを記述してください(必須)。
@@ -36,7 +36,7 @@ PHP環境を構築するために、以下をインストールしてくださ�
 OpenAPI Generatorを実行しPHP用のclientを生成します。
 ※インストール方法によってOpenAPI Generatorの実行方法に違いがあります。該当の例はHomebrewでインストールした場合
 ```
-openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v9/Route.yaml -g php -o ./
+openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v10/Route.yaml -g php -o ./
 ```
 
 直下にcomposer.jsonが生成されますので、clientのinstallを実行する。
