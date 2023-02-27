@@ -26,9 +26,9 @@ To construct PHP environment, install followings.
 1. PHP 8.1.x or above
 2. Composer 2.4.2 or above
 3. OpenAPI generator 6.2.0 or above
-4. Write Ids in conf/api_config.ini like this.
-  - accountId          : API account ID (required)
-  - accessToken        : API accessToken (required)
+4. Set the following environment variables.
+    - ACCOUNT_ID          : Account ID (required)
+    - ACCESS_TOKEN        : Access token (required)
 
 --------------------------------
 [How to execute Sample Code]
