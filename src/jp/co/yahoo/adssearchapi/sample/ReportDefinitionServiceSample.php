@@ -60,6 +60,8 @@ class ReportDefinitionServiceSample
 
         $config = Configuration::getDefaultConfiguration()->setAccessToken(self::$apiConfig['accessToken']);
 
+        $baseAccountId = (int) self::$apiConfig['baseAccountId'];
+
         $apiInstance = new ReportDefinitionServiceApi(
             new Client(),
             $config
@@ -81,7 +83,7 @@ class ReportDefinitionServiceSample
         $report_definition_service_operation->setOperand([$operand]);
 
         try {
-            $result = $apiInstance->reportDefinitionServiceAddPost($report_definition_service_operation);
+            $result = $apiInstance->reportDefinitionServiceAddPost($baseAccountId, $report_definition_service_operation);
 
             $job_id = $result->getRval()->getValues()[0]->getReportDefinition()->getReportJobId();
 
@@ -95,12 +97,12 @@ class ReportDefinitionServiceSample
         $report_definition_service_selector->setAccountId(self::$apiConfig['accountId']);
 
         try {
-            $result = $apiInstance->reportDefinitionServiceGetPost($report_definition_service_selector);
+            $result = $apiInstance->reportDefinitionServiceGetPost($baseAccountId, $report_definition_service_selector);
             $job_status = $result->getRval()->getValues()[0]->getReportDefinition()->getReportJobStatus();
 
             while($job_status != ReportDefinitionServiceReportJobStatus::COMPLETED){
                 sleep(1);
-                $result = $apiInstance->reportDefinitionServiceGetPost($report_definition_service_selector);
+                $result = $apiInstance->reportDefinitionServiceGetPost($baseAccountId, $report_definition_service_selector);
                 $job_status = $result->getRval()->getValues()[0]->getReportDefinition()->getReportJobStatus();
             }
 
@@ -114,7 +116,7 @@ class ReportDefinitionServiceSample
         $report_definition_service_download_selector->setReportJobId($job_id);
 
         try {
-            $data = $apiInstance->reportDefinitionServiceDownloadPost($report_definition_service_download_selector);
+            $data = $apiInstance->reportDefinitionServiceDownloadPost($baseAccountId, $report_definition_service_download_selector);
 
             if ( file_exists( './download/sample.csv' )) {
                 unlink('./download/sample.csv');
