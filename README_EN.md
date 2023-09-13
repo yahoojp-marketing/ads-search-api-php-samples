@@ -1,7 +1,7 @@
 --------------------------------
 [Version]
 --------------------------------
-v11
+v12
 
 
 --------------------------------
@@ -29,13 +29,14 @@ To construct PHP environment, install followings.
 4. Set the following environment variables.
     - ACCOUNT_ID          : Account ID (required)
     - ACCESS_TOKEN        : Access token (required)
+    - BASE_ACCOUNT_ID     : Account ID that should be specified in 'x-z-base-account-id' header. (required)
 
 --------------------------------
 [How to execute Sample Code]
 --------------------------------
 Move to the directory where you stored the cloned sample program, and execute OpenAPI Generator to generate a PHP client.
 ```
-openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v11/Route.yaml -g php -o ./
+openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v12/Route.yaml -g php -o ./
 ```
 
 Then, composer.json is generated immediately below, so execute client install.
