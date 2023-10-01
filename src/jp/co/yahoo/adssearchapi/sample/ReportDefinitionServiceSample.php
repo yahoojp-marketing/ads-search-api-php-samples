@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2020 Yahoo Japan Corporation. All Rights Reserved.
+ * Copyright (C) 2023 LY Corporation. All Rights Reserved.
  */
 
 namespace jp\co\yahoo\adssearchapi\sample;
