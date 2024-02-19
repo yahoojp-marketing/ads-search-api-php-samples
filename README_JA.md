@@ -1,7 +1,7 @@
 --------------------------------
 【バージョン】
 --------------------------------
-v12
+v13
 
 
 --------------------------------
@@ -37,7 +37,7 @@ PHP環境を構築するために、以下をインストールしてくださ�
 OpenAPI Generatorを実行しPHP用のclientを生成します。
 ※インストール方法によってOpenAPI Generatorの実行方法に違いがあります。該当の例はHomebrewでインストールした場合
 ```
-openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v12/Route.yaml -g php -o ./
+openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v13/Route.yaml -g php -o ./
 ```
 
 直下にcomposer.jsonが生成されますので、clientのinstallを実行する。
