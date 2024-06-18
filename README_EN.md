@@ -1,7 +1,8 @@
 --------------------------------
 [Version]
---------------------------------
-v13
+Please refer to the following for the latest version.
+- [API Reference](https://ads-developers.yahoo.co.jp/reference/en)
+- [Release Note](https://ads-developers.yahoo.co.jp/en/ads-api/developers-guide/release-note.html)
 
 
 --------------------------------
@@ -35,8 +36,9 @@ To construct PHP environment, install followings.
 [How to execute Sample Code]
 --------------------------------
 Move to the directory where you stored the cloned sample program, and execute OpenAPI Generator to generate a PHP client.
+Please specify the latest version in ${VERSION}.
 ```
-openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/v13/Route.yaml -g php -o ./
+openapi-generator generate -i https://yahoojp-marketing.github.io/ads-search-api-documents/design/${VERSION}/Route.yaml -g php -o ./
 ```
 
 Then, composer.json is generated immediately below, so execute client install.
