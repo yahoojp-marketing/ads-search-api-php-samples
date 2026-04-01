@@ -1,4 +1,4 @@
-# Yahoo!広告 検索広告 API PHPサンプルプログラム
+# LINEヤフー広告 検索広告 API PHPサンプルプログラム
 
 PHPサンプルプログラムです。
 
@@ -6,7 +6,7 @@ PHPサンプルプログラムです。
 
 ### [日本語](./README_JA.md)
 
-# Yahoo! Ads Search Ads API PHP sample code
+# LY Ads Search Ads API PHP sample code
 
 PHP sample code.
 
