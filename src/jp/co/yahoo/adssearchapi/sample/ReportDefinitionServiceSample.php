@@ -84,6 +84,7 @@ class ReportDefinitionServiceSample
 
         try {
             $result = $apiInstance->reportDefinitionServiceAddPost($baseAccountId, $report_definition_service_operation);
+            print_r($result);
 
             $job_id = $result->getRval()->getValues()[0]->getReportDefinition()->getReportJobId();
 
@@ -105,6 +106,7 @@ class ReportDefinitionServiceSample
                 $result = $apiInstance->reportDefinitionServiceGetPost($baseAccountId, $report_definition_service_selector);
                 $job_status = $result->getRval()->getValues()[0]->getReportDefinition()->getReportJobStatus();
             }
+            print_r($result);
 
         } catch (Exception $e) {
             echo 'Exception when calling ReportDefinitionServiceApi->reportDefinitionServiceGetPost: ', $e->getMessage(), PHP_EOL;
