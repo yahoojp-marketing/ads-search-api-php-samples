@@ -25,9 +25,9 @@ src/jp/co/yahoo/adssearchapi
 --------------------------------
 PHP環境を構築するために、以下をインストールしてください。
 
-1. PHP 8.1以上のバージョン
-2. Composer 2.4.2以上
-3. OpenAPI generator 6.2.0以上
+1. PHP 8.3以上のバージョン
+2. Composer 2.10.1以上
+3. OpenAPI generator 7.22.0以上
 4. 以下の環境変数を設定します。
     - ACCOUNT_ID          : アカウントIDを記述してください(必須)。
     - ACCESS_TOKEN        : アクセストークンを記述してください(必須)。
